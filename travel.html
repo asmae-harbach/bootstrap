@@ -4,22 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="bg-dark">
     <nav class="navbar navbar-expand d-flex justify-content-around navbar-dark bg-secondary ">
-        <a href="#" class="navbar-brand">Air Travel</a>
+        <a href="#" class="navbar-brand">Air <span class="text-info">Travel</span> </a>
         <ul class="navbar-nav">
             <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Destinations</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Circuits</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
         </ul>
-        <Button class="btn btn-outline-info">Réserver Maintenant</Button>
+        <Button class="btn btn-outline-info d-none d-md-block">Réserver Maintenant</Button>
     </nav>
-    <section class="hero" style="background-image: url('imagesTravel/hero.jpg');">
-
+    <section class="hero d-flex flex-column align-items-center justify-content-center" style="background-image: url('imagesTravel/hero.jpg'); min-height: 100vh; background-position: center;background-repeat: no-repeat; background-size: cover;">
+        <h2 class="text-white">nous suivre</h2>
+        <h1 class="text-white">Voyagez en Sécurité</h1>
+        <p class="text-center text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repudiandae praesentium aut, <br> fugiat nostrum soluta ducimus ab amet in impedit.</p>
+        <Button class="btn btn-outline-info">Réserver Maintenant</Button>
     </section>
+    <section class="destination my-5 mx-1">
+        <h1 class="text-white">Destinations populaires</h1>
+        <div class="row px-3 d-flex justify-content-center">
+            <div class="col-4 mx-1 my-3 d-flex flex-column justify-content-center align-items-center" style="background-image: url('imagesTravel/img1.jpg'); width:350px ;height:350px; background-position: center; background-size: cover;">
+                <h4 class="text-white">Paris</h4>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at laudantium natus maiores adipisci atque?</p>
+                <Button class="btn btn-outline-info">Lire Plus</Button>
+            </div>
+            <div class="col-4 mx-1 my-3 d-flex flex-column justify-content-center align-items-center" style="background-image: url('imagesTravel/img2.jpg'); width:350px ;height:350px; background-position: center; background-size: cover;" >
+                <h4 class="text-white">Capadocia</h4>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at laudantium natus maiores adipisci atque?</p>
+                <Button class="btn btn-outline-info">Lire Plus</Button>
+            </div>
+            <div class="col-4 mx-1 my-3 d-flex flex-column justify-content-center align-items-center" style="background-image: url('imagesTravel/img3.jpg'); width:350px ;height:350px; background-position: center; background-size: cover;" >
+                <h4 class="text-white">Venise</h4>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at laudantium natus maiores adipisci atque?</p>
+                <Button class="btn btn-outline-info">Lire Plus</Button>
+            </div>
+            <div class="col-4 mx-1 my-3 d-flex flex-column justify-content-center align-items-center" style="background-image: url('imagesTravel/img4.jpg'); width:350px ;height:350px; background-position: center; background-size: cover;" >
+                <h4 class="text-white">Paris</h4>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at laudantium natus maiores adipisci atque?</p>
+                <Button class="btn btn-outline-info">Lire Plus</Button>
+            </div>
+            <div class="col-4 mx-1 my-3 d-flex flex-column justify-content-center align-items-center" style="background-image: url('imagesTravel/img5.jpg'); width:350px ;height:350px; background-position: center; background-size: cover;" >
+                <h4 class="text-white">Istanbul</h4>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at laudantium natus maiores adipisci atque?</p>
+                <Button class="btn btn-outline-info">Lire Plus</Button>
+            </div>
+            <div class="col-4 mx-1 my-3 d-flex flex-column justify-content-center align-items-center" style="background-image: url('imagesTravel/img6.jpg'); width:350px ;height:350px; background-position: center; background-size: cover;" >
+                <h4 class="text-white">Rome</h4>
+                <p class="text-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at laudantium natus maiores adipisci atque?</p>
+                <a href="#">Voir les détails</a>
+            </div>
+        </div>
+    </section>
+    <section class="voyage m-3">
+        <h1 class="text-white">Nos Voyages</h1>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item m-3">
+              <h2 class="accordion-header" id="flush-heading1">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                  Paris
+                </button>
+              </h2>
+              <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis reprehenderit error repellendus, delectus perspiciatis enim odit placeat dolorem numquam velit voluptatem fugit ratione ducimus nam tempora saepe laudantium animi!</p>
+                    <a href="#">Voir les détails</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item m-3">
+                <h2 class="accordion-header" id="flush-heading2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                    Venise
+                  </button>
+                </h2>
+                <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis reprehenderit error repellendus, delectus perspiciatis enim odit placeat dolorem numquam velit voluptatem fugit ratione ducimus nam tempora saepe laudantium animi!</p>
+                      <a href="#">Voir les détails</a>
+                  </div>
+                </div>
+            </div>
+            <div class="accordion-item m-3">
+                <h2 class="accordion-header" id="flush-heading3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                    Capadocia
+                  </button>
+                </h2>
+                <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas blanditiis reprehenderit error repellendus, delectus perspiciatis enim odit placeat dolorem numquam velit voluptatem fugit ratione ducimus nam tempora saepe laudantium animi!</p>
+                      <a href="#">Voir les détails</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section class="contact bg-light mt-5" >
+        <div class="d-flex flex-column align-items-center p-5">
+            <h1>Contactez-nous</h1>
+            <p class="text-center">Des questions ou des remarques? <br> Ecrivez-nous simplement un message!</p>
+            <form class="row">
+                <div class="col-6 mt-3">
+                    <label for="">Nom</label>
+                    <input class="border-info rounded-5 px-3 py-1" type="text" placeholder="Entrez votre nom" style="width: 100%;">
+                </div>
+                <div class="col-6 mt-3">
+                    <label for="">Email</label>
+                    <input class="border-info rounded-5 px-3 py-1" type="text" placeholder="Entrez votre email" style="width: 100%;">
+                </div>
+                <div class="col-12 mt-3">
+                    <label for="">Message</label>
+                    <textarea rows="6" class="border-info rounded-3 px-3 py-1" placeholder="Tapez votre Message" name="" id="" style="width: 100%;"></textarea>
+                </div>
+                <div class="col-12 mt-3">
+                    <Button class="btn btn-info" style="width: 100%;">Envoyer</Button>
+                </div>
+                
+            </form>
+        </div>
+        
+        
+    </section>
+    <footer class="bg-secondary text-light text-center pt-4">
+        <div class="row">
+            <div class="col-6 align-self-start">
+                <p>&copy; 2024 AirTravel. Tous droits réservés. </p>
+            </div>
+            <div class="col-6">
+                <i class="fa-brands fa-instagram mx-2" style="font-size: 20px;"></i>
+                <i class="fa-brands fa-whatsapp mx-2" style="font-size: 20px;"></i>
+                <i class="fa-brands fa-facebook mx-2" style="font-size: 20px;"></i>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
